@@ -12,9 +12,9 @@
 <body class="hold-transition layout-top-nav control-sidebar-push-slide">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="吴派写意"
                 height="180" width="180">
-            <h1>创意画廊</h1>
+            <h1>吴派写意</h1>
         </div>
         @include('user/includes/navbar')
         <div class="content-wrapper">

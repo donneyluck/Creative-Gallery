@@ -86,7 +86,7 @@
                 onchange="document.getElementById('avatar_photo').src = window.URL.createObjectURL(this.files[0])"
                 name="avatar_photo" alt="Avatar photo" required>
         </div>
-        <label>* This will serve as your avatar photo on 创意画廊</label>
+        <label>* This will serve as your avatar photo on 吴派写意</label>
 
     </div>
 

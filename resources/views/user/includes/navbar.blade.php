@@ -1,9 +1,9 @@
 <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
     <div class="container">
         <a href="#" class="navbar-brand">
-            <img src="{{ asset('../storage/images/blacklogo.png') }}" alt="创意画廊"
+            <img src="{{ asset('../storage/images/blacklogo.png') }}" alt="吴派写意"
                 class="brand-image img-circle elevation-3" style="opacity: .8">
-            <span class="brand-text font-weight-light">创意<b>画廊</b></span>
+            <span class="brand-text font-weight-light">吴派写意</span>
         </a>
 
         <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"

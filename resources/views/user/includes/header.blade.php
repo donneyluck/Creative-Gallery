@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>创意画廊</title>
+    <title>吴派写意</title>
     <link rel="icon" href="{{ url('storage/images/whitelogo.png') }}">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"

@@ -5,7 +5,7 @@
             <!-- Grid column -->
             <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Content -->
-                <h5 class="text-uppercase fw-bold">创意画廊</h5>
+                <h5 class="text-uppercase fw-bold">吴派写意</h5>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 120px; background-color: #7c4dff; height: 2px" />
                 <p>
@@ -65,7 +65,7 @@
         <!-- Grid row -->
     </div>
 
-    <strong>Copyright &copy; 2023-2024 <a href="/">创意画廊</a>.</strong>
+    <strong>Copyright &copy; 2023-2024 <a href="/">吴派写意</a>.</strong>
     全部 rights reserved.
 
 </footer>

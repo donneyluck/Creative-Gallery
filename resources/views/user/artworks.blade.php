@@ -50,9 +50,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="吴派写意"
                 height="180" width="180">
-            <h1>创意画廊</h1>
+            <h1>吴派写意</h1>
         </div>
         @include('user/includes/menubar')
         @include('user/includes/topbar')
@@ -112,7 +112,7 @@
                                             <img oncontextmenu="return false;"
                                                 src="{{ url('../storage/images/arts/' . $art['photo']) }}"
                                                 alt="ID" class="img-fluid fixed-size-img mb-2 product-image" />
-                                            <div class="watermark">创意画廊</div>
+                                            <div class="watermark">吴派写意</div>
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
@@ -168,7 +168,7 @@
                                             <img oncontextmenu="return false;"
                                                 src="{{ url('../storage/images/arts/' . $art['photo']) }}"
                                                 alt="ID" class="img-fluid fixed-size-img mb-2 product-image" />
-                                            <div class="watermark">创意画廊</div>
+                                            <div class="watermark">吴派写意</div>
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
@@ -438,7 +438,7 @@
                     <div class="image-container">
                         <img oncontextmenu="return false;" src="${photoUrl}"
                             alt="ID" class="img-fluid fixed-size-img mb-2 product-image" />
-                        <div class="watermark">创意画廊</div>
+                        <div class="watermark">吴派写意</div>
                     </div>
                     <div class="card-body">
                         <div class="d-flex">
@@ -522,7 +522,7 @@
                     <div class="image-container">
                         <img oncontextmenu="return false;" src="${photoUrl}"
                             alt="ID" class="img-fluid fixed-size-img mb-2 product-image" />
-                        <div class="watermark">创意画廊</div>
+                        <div class="watermark">吴派写意</div>
                     </div>
                     <div class="card-body">
                         <div class="d-flex">

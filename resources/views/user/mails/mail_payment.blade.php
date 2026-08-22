@@ -3,7 +3,7 @@
 <p>Good day,</p>
 
 
-<p>Thank you for buying an art  with 创意画廊 ! You have won the bidding and the artist accepted your ₱{{ $price }} offer.</p>
+<p>Thank you for buying an art  with 吴派写意 ! You have won the bidding and the artist accepted your ₱{{ $price }} offer.</p>
 
 <p>Please make the payment withing 3-5 days. If you don't pay, the order will be cancelled.</p>
 
@@ -16,4 +16,4 @@
 <p>Thank you for joining the community.</p>
 
 <h3><b><i>[Burgos College]</i></b></h3>
-<h3><b>创意画廊 Team</b></h3>
+<h3><b>吴派写意 Team</b></h3>

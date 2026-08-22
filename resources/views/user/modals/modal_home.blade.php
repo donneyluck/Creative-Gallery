@@ -150,7 +150,7 @@
                                     <img oncontextmenu="return false;"
                                         src="{{ asset('../storage/images/blacklogo.png') }}" alt="ID"
                                         id="view_photo" class="product-image" />
-                                    <div class="watermark">创意<br>画廊</div>
+                                    <div class="watermark">吴派写意</div>
                                 </div>
                                 {{-- <img oncontextmenu="return false;" src="{{ asset('../storage/images/blacklogo.png') }}" id="view_photo"
                                     class="product-image" alt="Product Image"> --}}
@@ -237,7 +237,7 @@
                                     <img oncontextmenu="return false;"
                                         src="{{ asset('../storage/images/blacklogo.png') }}" alt="ID"
                                         id="enthusiast_photo" class="product-image" />
-                                    <div class="watermark">创意<br>画廊</div>
+                                    <div class="watermark">吴派写意</div>
                                 </div>
                             </div>
                             <hr>

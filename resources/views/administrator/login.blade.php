@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>创意画廊</title>
+    <title>吴派写意</title>
     <!--===============================================================================================-->
     <link rel="icon" href="{{ url('storage/images/whitelogo.png') }}">
     <!--===============================================================================================-->
@@ -48,7 +48,7 @@
                 <form class="login100-form validate-form" action="/admin/login" method="POST">
                     @csrf
                     <span class="login100-form-title">
-                        创意画廊
+                        吴派写意
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
