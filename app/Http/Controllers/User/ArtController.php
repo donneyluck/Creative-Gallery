@@ -94,7 +94,7 @@ class ArtController extends Controller
             'photo' => 'required',
             'end_date' => 'required',
             'start_price' => 'required',
-            'video' => 'required|file',
+            'video' => 'nullable|file',
         ];
 
         $request->validate($validation);

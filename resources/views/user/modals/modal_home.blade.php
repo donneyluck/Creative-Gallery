@@ -112,7 +112,7 @@
                             <div class="form-group">
                                 <label for="video" class="col-sm-12 control-label">真伪证明</label>
                                 <div class="col-xs-12">
-                                    <input type="file" id="video" name="video" accept="video/*" required>
+                                    <input type="file" id="video" name="video">
                                 </div>
                             </div>
                         </div>
