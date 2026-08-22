@@ -70,6 +70,20 @@
             "responsive": true,
             "lengthChange": true,
             "autoWidth": false,
+            "language": {
+                "lengthMenu": "显示 _MENU_ 条",
+                "zeroRecords": "没有找到匹配项",
+                "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "infoEmpty": "没有数据",
+                "infoFiltered": "(从 _MAX_ 条记录中过滤)",
+                "search": "搜索:",
+                "paginate": {
+                    "first": "第一页",
+                    "last": "最后一页",
+                    "next": "下一页",
+                    "previous": "上一页"
+                }
+            },
             "buttons": [{
                 extend: 'print',
                 customize: function(win) {
@@ -132,7 +146,21 @@
             "ordering": true,
             "info": true,
             "autoWidth": true,
-            "responsive": false
+            "responsive": false,
+            "language": {
+                "lengthMenu": "显示 _MENU_ 条",
+                "zeroRecords": "没有找到匹配项",
+                "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "infoEmpty": "没有数据",
+                "infoFiltered": "(从 _MAX_ 条记录中过滤)",
+                "search": "搜索:",
+                "paginate": {
+                    "first": "第一页",
+                    "last": "最后一页",
+                    "next": "下一页",
+                    "previous": "上一页"
+                }
+            }
         });
 
         $('#example3').DataTable({
@@ -143,7 +171,21 @@
             "info": true,
             "autoWidth": true,
             "responsive": false,
-            "length": 10
+            "length": 10,
+            "language": {
+                "lengthMenu": "显示 _MENU_ 条",
+                "zeroRecords": "没有找到匹配项",
+                "info": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+                "infoEmpty": "没有数据",
+                "infoFiltered": "(从 _MAX_ 条记录中过滤)",
+                "search": "搜索:",
+                "paginate": {
+                    "first": "第一页",
+                    "last": "最后一页",
+                    "next": "下一页",
+                    "previous": "上一页"
+                }
+            }
         });
     });
 </script>

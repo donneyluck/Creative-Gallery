@@ -94,32 +94,32 @@ class ArtController extends Controller
             'photo' => 'required',
             'end_date' => 'required',
             'start_price' => 'required',
+            'video' => 'required|file|mimetypes:video/*',
         ];
 
         $request->validate($validation);
 
-        //SELECT `id`, `photo`, `user_id`, `name`, `category_id`, `starting_price`, 
-        //`description`, `start_date`, `end_date`, `proof_of_ownership`, `status`, 
-        //`created_at`, `updated_at` FROM `art` WHERE 1
-
         $art = new Art;
         $art->user_id = Auth::id();
-        //$art->user_id = 1;
         $art->name = $request->title;
         $art->category_id = $request->category;
         $art->starting_price = $request->start_price;
         $art->description = $request->description;
+
         $art->start_date = $request->start_date;
         $art->end_date = $request->end_date;
+
         $image = $request->file('photo');
         $imageName = time() . rand(1, 100) . '.' . $image->getClientOriginalExtension();
         $image->move('storage/images/arts', $imageName);
-
-        $customName = time() . '.' . $request->video->getClientOriginalExtension();
-        $videoPath = $request->video->move('storage/videos/proofs', $customName);
-
         $art->photo = $imageName;
-        $art->proof_of_ownership = $videoPath;
+
+        if ($request->hasFile('video')) {
+            $video = $request->file('video');
+            $customName = time() . '.' . $video->getClientOriginalExtension();
+            $videoPath = $video->move('storage/videos/proofs', $customName);
+            $art->proof_of_ownership = $videoPath;
+        }
 
         $isSaved = $art->save();
         if ($isSaved) {
