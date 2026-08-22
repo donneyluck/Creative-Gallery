@@ -65,7 +65,7 @@
                         <div class="card" style="width:100%;">
                             <div class="card-header">
                                 <a href="#add" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i
-                                        class="fas fa-plus"></i> New</a>
+                                        class="fas fa-plus"></i> 新建</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -76,7 +76,7 @@
                                             <th>姓名</th>
                                             <th>状态</th>
                                             <th>创建d At</th>
-                                            <th>Tools</th>
+                                            <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -87,9 +87,9 @@
                                                 <td>{{ $category['name'] }}</td>
 
                                                 @if ($category['status'] == 1)
-                                                    <td><span class="badge badge-success">Shown</span></td>
+                                                    <td><span class="badge badge-success">显示</span></td>
                                                 @elseif ($category['status'] == 0)
-                                                    <td><span class="badge badge-danger">Hidden</span></td>
+                                                    <td><span class="badge badge-danger">隐藏</span></td>
                                                 @endif
 
 

@@ -18,8 +18,7 @@
                                 <label for="name" class="col-sm-12 control-label">姓名</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Ex: Pastel"
-                                        oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" required>
+                                        placeholder="Ex: Pastel" required>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +57,7 @@
                                 <label for="edit_name" class="col-sm-12 control-label">姓名</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="edit_name" name="name"
-                                        placeholder="Ex: Pastel"
-                                        oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" maxlength="11">
+                                        placeholder="Ex: Pastel" maxlength="11">
                                 </div>
                             </div>
                         </div>

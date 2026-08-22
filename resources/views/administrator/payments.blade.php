@@ -65,7 +65,7 @@
                         <div class="card" style="width:100%;">
                             <div class="card-header">
                                 {{-- <a href="#add" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i
-                                        class="fas fa-plus"></i> New</a> --}}
+                                        class="fas fa-plus"></i> 新建</a> --}}
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">

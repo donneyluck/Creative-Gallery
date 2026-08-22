@@ -65,7 +65,7 @@
                         <div class="card" style="width:100%;">
                             <div class="card-header">
                                 <a href="#add" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i
-                                        class="fas fa-plus"></i> New</a>
+                                        class="fas fa-plus"></i> 新建</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -76,7 +76,7 @@
                                             <th>姓名</th>
                                             <th>Comment</th>
                                             <th>创建d At</th>
-                                            <th>Tools</th>
+                                            <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>

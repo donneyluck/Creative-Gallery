@@ -15,13 +15,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Requests</h1>
+                            <h1>申请</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
                                 <li class="breadcrumb-item">Bidding</li>
-                                <li class="breadcrumb-item active">Requests</li>
+                                <li class="breadcrumb-item active">申请</li>
                             </ol>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="card" style="width:100%;">
                             <div class="card-header">
                                 {{-- <a href="#add" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i
-                                        class="fas fa-plus"></i> New</a> --}}
+                                        class="fas fa-plus"></i> 新建</a> --}}
                             </div>
                             <div class="card-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -68,7 +68,7 @@
                                             <th>Duration</th>
                                             <th>状态</th>
                                             <th>日期 Requested</th>
-                                            <th>Tools</th>
+                                            <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -88,7 +88,7 @@
                                                 <td>{{ $request['start_date'] }}</td>
                                                 <td>{{ $request['duration'] }}</td>
                                                 @if ($request['art_status'] == 0)
-                                                    <td><span class="badge badge-success">New</span></td>
+                                                    <td><span class="badge badge-success">新建</span></td>
                                                 @endif
                                                 <td>{{ $request['created_at'] }}</td>
                                                 <td>

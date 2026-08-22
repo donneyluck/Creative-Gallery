@@ -15,12 +15,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Verification Requests</h1>
+                            <h1>认证申请</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
                                 <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
-                                <li class="breadcrumb-item active">Verification Requests</li>
+                                <li class="breadcrumb-item active">认证申请</li>
                             </ol>
                         </div>
                     </div>
@@ -63,7 +63,7 @@
                                             <th>Account Type</th>
                                             <th>状态</th>
                                             <th>日期 of Registration</th>
-                                            <th>Tools</th>
+                                            <th>操作</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -79,7 +79,7 @@
                                                     <td><span class="badge badge-primary">收藏家/Buyer</span></td>
                                                 @endif
                                                 @if ($unverified_account['verification_status'] == 0)
-                                                    <td><span class="badge badge-success">New</span></td>
+                                                    <td><span class="badge badge-success">新建</span></td>
                                                 @endif
                                                 <td>{{ $unverified_account['created_at'] }}</td>
                                                 <td>

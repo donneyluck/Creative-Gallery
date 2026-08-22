@@ -3,7 +3,7 @@
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">分类 | New</h4>
+                <h4 class="modal-title">分类 | 新建</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -18,8 +18,7 @@
                                 <label for="name" class="col-sm-12 control-label">姓名</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="name" name="name"
-                                        placeholder="Ex: Pastel"
-                                        oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" required>
+                                        placeholder="Ex: Pastel" required>
                                 </div>
                             </div>
                         </div>
@@ -58,8 +57,7 @@
                                 <label for="edit_name" class="col-sm-12 control-label">姓名</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="edit_name" name="name"
-                                        placeholder="Ex: Pastel"
-                                        oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" maxlength="11">
+                                        placeholder="Ex: Pastel" maxlength="11">
                                 </div>
                             </div>
                         </div>

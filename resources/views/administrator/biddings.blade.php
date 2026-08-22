@@ -53,7 +53,7 @@
                         <div class="card" style="width:100%;">
                             <div class="card-header">
                                 {{-- <a href="#add" data-toggle="modal" class="btn btn-primary btn-sm btn-flat"><i
-                                        class="fas fa-plus"></i> New</a> --}}
+                                        class="fas fa-plus"></i> 新建</a> --}}
                             </div>
                             <div class="card-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -68,7 +68,7 @@
                                             <th>Duration</th>
                                             <th>状态</th>
                                             <th>日期 Requested</th>
-                                            {{-- <th>Tools</th> --}}
+                                            {{-- <th>操作</th> --}}
                                         </tr>
                                     </thead>
                                     <tbody>

@@ -43,7 +43,7 @@
                             <a href="{{ url('/admin/verification') }}" class="nav-link">
                                 <i class="nav-icon fas fa-id-card"></i>
                                 <p>
-                                    Verification Requests
+                                    认证申请
                                 </p>
                             </a>
                         </li>
@@ -66,7 +66,7 @@
                             <a href="{{ url('/admin/bidding/requests') }}" class="nav-link">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
-                                    Requests
+                                    竞拍申请
                                 </p>
                             </a>
                         </li>
@@ -74,7 +74,7 @@
                             <a href="{{ url('/admin/biddings') }}" class="nav-link">
                                 <i class="nav-icon fas fa-hourglass-start"></i>
                                 <p>
-                                    On Bidding
+                                    竞拍中
                                 </p>
                             </a>
                         </li>

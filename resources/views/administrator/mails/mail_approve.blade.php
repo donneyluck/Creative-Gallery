@@ -1,4 +1,4 @@
-<h1><b>Subject:</b> Account Verification</h1>
+<h1><b>Subject:</b> Account 认证</h1>
 
 <p>Good day {{ $name }},</p>
 

@@ -3,7 +3,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Verification | 通过</h4>
+                <h4 class="modal-title">认证 | 通过</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>

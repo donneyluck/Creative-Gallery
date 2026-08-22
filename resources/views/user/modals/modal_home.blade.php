@@ -47,7 +47,7 @@
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="title" name="title"
                                         placeholder="请输入作品名称..."
-                                        oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" required>
+                                        required>
                                 </div>
                             </div>
                             <div class="form-group">
@@ -55,7 +55,7 @@
                                 <div class="col-xs-12">
                                     <textarea rows="5" class="form-control" id="description" name="description"
                                         placeholder="请输入作品描述..."
-                                        oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" required></textarea>
+                                        required></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
