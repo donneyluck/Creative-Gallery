@@ -40,22 +40,22 @@
             <span class="float-right text-muted text-sm">2 days</span>
           </a>
           <div class="dropdown-divider"></div>
-          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+          <a href="#" class="dropdown-item dropdown-footer">See 全部 Notifications</a>
         </div>
       </li>-->
 
         <li class="nav-item dropdown user-menu">
             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
                 <img src="{{ asset('../storage/images/avatars/' . session('photo')) }}" class="user-image img-circle elevation-2"
-                    alt="User Image">
+                    alt="用户 Image">
                 <span class="d-none d-md-inline">{{ session('name') }}</span>
 
             </a>
             <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                <!-- User image -->
+                <!-- 用户 image -->
                 <li class="user-header">
                     <img src="{{ asset('../storage/images/avatars/' . session('photo')) }}" class="img-circle elevation-2"
-                        alt="Administrator">
+                        alt="管理员">
 
                     <p>{{ session('name') }}<small></small></p>
                 </li>
@@ -70,7 +70,7 @@
 
                     {{-- <a href="#change" data-toggle="modal"
                 id="admin_password" class="btn btn-default btn-flat">
-                Settings</a>
+                设置</a>
                  --}}
 
                     <a href="/admin/logout" class="btn btn-default btn-flat float-right">Log out</a>

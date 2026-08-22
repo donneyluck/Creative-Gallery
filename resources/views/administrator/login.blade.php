@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Creative Gallery</title>
+    <title>创意画廊</title>
     <!--===============================================================================================-->
     <link rel="icon" href="{{ url('storage/images/whitelogo.png') }}">
     <!--===============================================================================================-->
@@ -48,11 +48,11 @@
                 <form class="login100-form validate-form" action="/admin/login" method="POST">
                     @csrf
                     <span class="login100-form-title">
-                        Creative Gallery
+                        创意画廊
                     </span>
 
                     <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="email" name="email" placeholder="Email Address">
+                        <input class="input100" type="email" name="email" placeholder="邮箱 地址">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-user" aria-hidden="true"></i>
@@ -78,7 +78,7 @@
                             <div class='alert alert-danger alert-dismissible'>
                                 <button type='button' class='close' data-dismiss='alert'
                                     aria-hidden='true'>&times;</button>
-                                <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                                <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                                 <ul>
                                     @foreach ($errors->all() as $error)
                                         <li>{{ $error }}</li>
@@ -91,7 +91,7 @@
                             <div class='alert alert-success alert-dismissible'>
                                 <button type='button' class='close' data-dismiss='alert'
                                     aria-hidden='true'>&times;</button>
-                                <h4><i class='icon fa fa-check'></i> Success!</h4>
+                                <h4><i class='icon fa fa-check'></i> 成功！</h4>
                                 <ul>
                                     {{ session()->get('success') }}
                                 </ul>
@@ -101,7 +101,7 @@
 
                     <div class="text-center p-t-136">
                         {{-- <a class="txt2" href="#">
-                            Create your Account
+                            创建 your Account
                             <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                         </a> --}}
                     </div>

@@ -11,8 +11,8 @@
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">My Profile</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">My 个人资料</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -31,7 +31,7 @@
                                 <div class="widget-user-image">
                                     <img class="img-circle elevation-2" height="64" width="64"
                                         src="{{ asset('../storage/images/avatars/' . session('photo')) }}"
-                                        alt="User Avatar">
+                                        alt="用户 Avatar">
                                 </div>
                                 <div class="card-footer p-0">
                                     <ul class="nav flex-column">
@@ -67,7 +67,7 @@
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 <button type="submit" class="btn btn-success">UPDATE</button>
                 </form>
             </div>
@@ -76,13 +76,13 @@
 </div>
 <!-- Add -->
 
-<!-- View -->
+<!-- 查看 -->
 <div class="modal fade" id="view_as_artist">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">View</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">查看</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -101,10 +101,10 @@
                             <h3 class="my-3" id="view_title"></h3>
                             <div class="row">
                                 <div class="col">
-                                    <p id="view_category">Category</p>
+                                    <p id="view_category">分类</p>
                                 </div>
                                 <div class="col">
-                                    <p id="view_start_date">Start Date</p>
+                                    <p id="view_start_date">Start 日期</p>
                                 </div>
                             </div>
                             <p id="view_description"></p>
@@ -119,4 +119,4 @@
         </div>
     </div>
 </div>
-<!-- View -->
+<!-- 查看 -->

@@ -6,9 +6,9 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         <!-- Preloader -->
 
@@ -22,12 +22,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Dashboard</h1>
+                            <h1>仪表盘</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
-                                <li class="breadcrumb-item active">Dashboard</li>
+                                <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
+                                <li class="breadcrumb-item active">仪表盘</li>
                             </ol>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -51,7 +51,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -71,7 +71,7 @@
                                         <h3>{{ $user['users'] }}</h3>
                                     @endforeach
                                     {{-- <h3>1</h3> --}}
-                                    <p>Users</p>
+                                    <p>用户s</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-users"></i>
@@ -111,7 +111,7 @@
                                     @foreach ($solds as $sold)
                                         <h3>{{ $sold['arts'] }}</h3>
                                     @endforeach
-                                    <p>Sold</p>
+                                    <p>已售</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-palette"></i>
@@ -130,7 +130,7 @@
                                     @foreach ($biddings as $bidding)
                                         <h3>{{ $bidding['biddings'] }}</h3>
                                     @endforeach
-                                    <p>Biddings</p>
+                                    <p>竞拍管理</p>
                                 </div>
                                 <div class="icon">
                                     <i class="fas fa-heart"></i>
@@ -147,14 +147,14 @@
                             <!-- BAR CHART -->
                             <div class="card card-success">
                                 <div class="card-header">
-                                    <h3 class="card-title">Bidding Percentage</h3>
+                                    <h3 class="card-title">Bidding 百分比</h3>
 
                                     <div class="card-tools">
                                         <select class="form-control select2" id="chartInterval"
                                             onchange="updateChart()">
                                             <option value="daily">Daily</option>
-                                            <option value="weekly">Weekly</option>
-                                            <option value="monthly">Monthly</option>
+                                            <option value="weekly">周ly</option>
+                                            <option value="monthly">月ly</option>
                                         </select>
                                     </div>
                                 </div>
@@ -212,14 +212,14 @@
                     biddings = <?php echo json_encode($daily_biddings_percentage); ?>;
                     console.log(biddings);
                     updatedData = biddings.map(bidding => bidding.percentage);
-                    legend = "Daily Percentage";
+                    legend = "Daily 百分比";
                     break;
                 case 'weekly':
                     labels = biddings.map(bidding => bidding.date)
                     biddings = <?php echo json_encode($weekly_biddings_percentage); ?>;
                     console.log(biddings);
                     updatedData = biddings.map(bidding => bidding.percentage);
-                    legend = "Weekly Percentage";
+                    legend = "周ly 百分比";
 
                     break;
                 case 'monthly':
@@ -227,7 +227,7 @@
                     biddings = <?php echo json_encode($monthly_biddings_percentage); ?>;
                     console.log(biddings);
                     updatedData = biddings.map(bidding => bidding.percentage);
-                    legend = "Monthly Percentage";
+                    legend = "月ly 百分比";
 
                     break;
                 default:
@@ -235,7 +235,7 @@
                     biddings = <?php echo json_encode($daily_biddings_percentage); ?>;
                     console.log(biddings);
                     updatedData = biddings.map(bidding => bidding.percentage);
-                    legend = "Daily Percentage";
+                    legend = "Daily 百分比";
                     break;
             }
 
@@ -248,7 +248,7 @@
 
 
         const percentages = biddings.map(bidding => bidding.percentage);
-        var legend = "Daily Percentage";
+        var legend = "Daily 百分比";
 
         const barChartData = {
             labels: labels,

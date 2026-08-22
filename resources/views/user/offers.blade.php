@@ -50,9 +50,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         @include('user/includes/menubar')
         @include('user/includes/topbar')
@@ -61,7 +61,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -72,7 +72,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -98,7 +98,7 @@
                                         @if ($art['art_status'] == 3)
                                             <div class="ribbon-wrapper ribbon-lg">
                                                 <div class="ribbon bg-primary">
-                                                    Sold
+                                                    已售
                                                 </div>
                                             </div>
                                         @elseif ($art['has_active_bid'] == 1 && $art['enthusiast_id'] == Auth::id() && $art['bidding_status'] == 1)
@@ -110,7 +110,7 @@
                                         @elseif ($art['has_active_bid'] == 1)
                                             <div class="ribbon-wrapper ribbon-lg">
                                                 <div class="ribbon bg-warning">
-                                                    Not Available
+                                                    Not 在售
                                                 </div>
                                             </div>
                                         @endif
@@ -119,7 +119,7 @@
                                             <img oncontextmenu="return false;"
                                                 src="{{ url('../storage/images/arts/' . $art['photo']) }}"
                                                 alt="ID" class="img-fluid fixed-size-img mb-2 product-image" />
-                                            <div class="watermark">Creative Gallery</div>
+                                            <div class="watermark">创意画廊</div>
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
@@ -152,7 +152,7 @@
                                         @if ($art['art_status'] == 3)
                                             <div class="ribbon-wrapper ribbon-lg">
                                                 <div class="ribbon bg-primary">
-                                                    Sold
+                                                    已售
                                                 </div>
                                             </div>
                                         @elseif ($art['has_active_bid'] == 1 && $art['buyer_id'] == Auth::id())
@@ -164,7 +164,7 @@
                                         @elseif ($art['has_active_bid'] == 1)
                                             <div class="ribbon-wrapper ribbon-lg">
                                                 <div class="ribbon bg-warning">
-                                                    Not Available
+                                                    Not 在售
                                                 </div>
                                             </div>
                                         @endif
@@ -176,7 +176,7 @@
                                             <img oncontextmenu="return false;"
                                                 src="{{ url('../storage/images/arts/' . $art['photo']) }}"
                                                 alt="ID" class="img-fluid fixed-size-img mb-2 product-image" />
-                                            <div class="watermark">Creative Gallery</div>
+                                            <div class="watermark">创意画廊</div>
                                         </div>
                                         <div class="card-body">
                                             <div class="d-flex">
@@ -286,12 +286,12 @@
                                 productTitle.classList.add('product-title');
                                 productTitle.textContent = element.name;
 
-                                var productDescription = document.createElement('span');
-                                productDescription.classList.add('product-description');
-                                productDescription.textContent = element.contact;
+                                var product描述 = document.createElement('span');
+                                product描述.classList.add('product-description');
+                                product描述.textContent = element.contact;
 
                                 productDetails.appendChild(productTitle);
-                                productDetails.appendChild(productDescription);
+                                productDetails.appendChild(product描述);
                                 productInfo.appendChild(productDetails);
 
                                 if (x == 0) {
@@ -388,8 +388,8 @@
                 // var notificationId = $(this).closest('.dropdown-item').data('notification-id');
                 var id = $(this).data('id');
                 $('#accept').modal('show');
-                var formAction = '/accept-offer/' + id;
-                $('#formAccept').attr('action', formAction);
+                var form操作 = '/accept-offer/' + id;
+                $('#formAccept').attr('action', form操作);
 
             });
             // Event delegation for reject button click
@@ -399,10 +399,10 @@
 
                 $('#rejectId').val(id);
 
-                console.log("Reject clicked for notification ID: " + id);
+                console.log("拒绝 clicked for notification ID: " + id);
                 $('#reject').modal('show');
-                // var formAction = '/reject-offer/' + notificationId;
-                // $('#formReject').attr('action', formAction);
+                // var form操作 = '/reject-offer/' + notificationId;
+                // $('#form拒绝').attr('action', form操作);
 
             });
         });

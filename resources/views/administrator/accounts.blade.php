@@ -6,9 +6,9 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         <!-- Preloader -->
 
@@ -22,12 +22,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Accounts</h1>
+                            <h1>账户管理</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
-                                <li class="breadcrumb-item active">Accounts</li>
+                                <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
+                                <li class="breadcrumb-item active">账户管理</li>
                             </ol>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -51,7 +51,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -73,11 +73,11 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Username</th>
-                                            <th>Full Name</th>
-                                            <th>Email Address</th>
-                                            {{-- <th>Contact No.</th> --}}
-                                            <th>Date of Registration</th>
+                                            <th>用户name</th>
+                                            <th>Full 姓名</th>
+                                            <th>邮箱 地址</th>
+                                            {{-- <th>联系方式 No.</th> --}}
+                                            <th>日期 of Registration</th>
                                             <th>Tools</th>
                                         </tr>
                                     </thead>
@@ -109,7 +109,7 @@
                                                         data-email="{{ $employee['email'] }}"
                                                         data-contact="{{ $employee['contact'] }}"
                                                         data-status="{{ $employee['stat_no'] }}"><i
-                                                            class="fas fa-edit"></i> Edit</button> --}}
+                                                            class="fas fa-edit"></i> 编辑</button> --}}
 
                                                     {{-- <button type="button" class="btn bg-navy btn-sm addface"
                                                         data-id="{{ $employee['employee_id'] }}"><i
@@ -119,13 +119,13 @@
                                                             data-id="{{ $account['id'] }}"
                                                             data-status="{{ $account['status'] }}"><i
                                                                 class="fas fa-close"></i>
-                                                            Deactivate</button>
+                                                            禁用</button>
                                                     @elseif($account['status'] == 0)
                                                         <button type="button" class="btn btn-success btn-sm activate"
                                                             data-id="{{ $account['id'] }}"
                                                             data-status="{{ $account['status'] }}"><i
                                                                 class="fas fa-check"></i>
-                                                            Activate</button>
+                                                            激活</button>
                                                     @endif
 
                                                 </td>
@@ -173,8 +173,8 @@
                 console.log();
                 //$('#delete_id').val(id);
 
-                var formAction = '/admin/account/deactivate/' + id;
-                $('#formDeactivate').attr('action', formAction);
+                var form操作 = '/admin/account/deactivate/' + id;
+                $('#form禁用').attr('action', form操作);
             });
 
 
@@ -187,8 +187,8 @@
 
                 //$('#delete_id').val(id);
 
-                var formAction = '/admin/account/activate/' + id;
-                $('#formActivate').attr('action', formAction);
+                var form操作 = '/admin/account/activate/' + id;
+                $('#form激活').attr('action', form操作);
             });
 
 

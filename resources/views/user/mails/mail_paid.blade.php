@@ -6,7 +6,7 @@
 <h3>Customer Information</h3>
 <table>
     <tr>
-        <th>Name</th>
+        <th>姓名</th>
         <td>{{ $name }}</td>
     </tr>
     <tr>
@@ -14,7 +14,7 @@
         <td>{{ $contact }}</td>
     </tr>
     <tr>
-        <th>Email</th>
+        <th>邮箱</th>
         <td>{{ $email }}</td>
     </tr>
 </table>
@@ -26,10 +26,10 @@
         <td>GCASH</td>
     </tr>
     <tr>
-        <th>Amount</th>
+        <th>金额</th>
         <td>{{ $amount }}</td>
     </tr>
 </table>
 
 <h3><b><i>[Burgos College]</i></b></h3>
-<h3><b>Creative Gallery Team</b></h3>
+<h3><b>创意画廊 Team</b></h3>

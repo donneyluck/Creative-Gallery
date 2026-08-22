@@ -3,8 +3,8 @@
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Category | New</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">分类 | New</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -15,7 +15,7 @@
                     <div class="row">
                         <div class="col-sm-8">
                             <div class="form-group">
-                                <label for="name" class="col-sm-12 control-label">Name</label>
+                                <label for="name" class="col-sm-12 control-label">姓名</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="name" name="name"
                                         placeholder="Ex: Pastel"
@@ -26,7 +26,7 @@
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
@@ -37,13 +37,13 @@
 </div>
 <!-- Add -->
 
-<!-- Edit -->
+<!-- 编辑 -->
 <div class="modal fade" id="edit">
     <div class="modal-dialog modal-md">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Category | Edit</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">分类 | 编辑</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -55,7 +55,7 @@
                     <div class="row">
                         <div class="col-sm-5">
                             <div class="form-group">
-                                <label for="edit_name" class="col-sm-12 control-label">Name</label>
+                                <label for="edit_name" class="col-sm-12 control-label">姓名</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="edit_name" name="name"
                                         placeholder="Ex: Pastel"
@@ -70,13 +70,13 @@
                     <div class="row">
                         <div class="col-sm-12">
                             <div class="form-group">
-                                <label for="edit_status" class="col-sm-12 control-label">Status</label>
+                                <label for="edit_status" class="col-sm-12 control-label">状态</label>
 
                                 <div class="col-sm-5">
                                     <select class="form-control" id="edit_status" name="status" required>
                                         <option value="" selected>- Select -</option>
-                                        <option value="1">Active</option>
-                                        <option value="0">Inactive</option>
+                                        <option value="1">正常</option>
+                                        <option value="0">禁用</option>
                                     </select>
                                 </div>
 
@@ -85,7 +85,7 @@
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
@@ -94,30 +94,30 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Edit -->
+<!-- 编辑 -->
 
-<!-- Delete -->
+<!-- 删除 -->
 <div class="modal fade" id="delete">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Category | Delete</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">分类 | 删除</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formDelete" class="form-horizontal" method="GET" action="">
+                <form id="form删除" class="form-horizontal" method="GET" action="">
                     @csrf
                     {{-- <input type="text" id="delete_id" name="id"> --}}
                     <div class="text-center">
-                        <h2 class="bold"> Are you sure you want to delete this Category?</h2>
+                        <h2 class="bold"> Are you sure you want to delete this 分类?</h2>
                     </div>
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-danger"> Delete</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-danger"> 删除</button>
                 </form>
             </div>
             <!-- /.modal-content -->
@@ -125,16 +125,16 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Delete -->
+<!-- 删除 -->
 
 
-<!-- Upload -->
+<!-- 上传 -->
 <div class="modal fade" id="upload">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Professors | Upload</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Professors | 上传</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -152,7 +152,7 @@
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
@@ -161,7 +161,7 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Upload -->
+<!-- 上传 -->
 
 
 <!-- Add Face -->
@@ -170,7 +170,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Employee | Add Face</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -192,8 +192,8 @@
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn bg-navy"> Upload</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn bg-navy"> 上传</button>
                 </form>
             </div>
             <!-- /.modal-content -->

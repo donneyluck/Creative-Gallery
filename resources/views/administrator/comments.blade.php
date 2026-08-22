@@ -6,9 +6,9 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         <!-- Preloader -->
 
@@ -22,12 +22,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Comments</h1>
+                            <h1>评论管理</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
-                                <li class="breadcrumb-item active">Comments</li>
+                                <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
+                                <li class="breadcrumb-item active">评论管理</li>
                             </ol>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -51,7 +51,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -73,9 +73,9 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Name</th>
+                                            <th>姓名</th>
                                             <th>Comment</th>
-                                            <th>Created At</th>
+                                            <th>创建d At</th>
                                             <th>Tools</th>
                                         </tr>
                                     </thead>
@@ -158,8 +158,8 @@
 
                 //$('#delete_id').val(id);
 
-                var formAction = '/administrator/category/delete/' + id;
-                $('#formDelete').attr('action', formAction);
+                var form操作 = '/administrator/category/delete/' + id;
+                $('#form删除').attr('action', form操作);
             });
 
 

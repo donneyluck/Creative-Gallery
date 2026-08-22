@@ -3,9 +3,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         @include('administrator/includes/navbar')
         @include('administrator/includes/menubar')
@@ -14,13 +14,13 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Sold</h1>
+                            <h1>已售</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
                                 <li class="breadcrumb-item">Bidding</li>
-                                <li class="breadcrumb-item active">Sold</li>
+                                <li class="breadcrumb-item active">已售</li>
                             </ol>
                         </div>
                     </div>
@@ -30,7 +30,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -41,7 +41,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -59,13 +59,13 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Artwork</th>
-                                            <th>Artist</th>
-                                            <th>Description</th>
-                                            <th>Starting Price</th>
-                                            <th>Date</th>
+                                            <th>作品</th>
+                                            <th>艺术家</th>
+                                            <th>描述</th>
+                                            <th>起拍价</th>
+                                            <th>日期</th>
                                             <th>Duration</th>
-                                            <th>Status</th>     
+                                            <th>状态</th>     
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -85,7 +85,7 @@
                                                 <td>{{ $sold['start_date'] }}</td>
                                                 <td>{{ $sold['duration'] }}</td>
                                                 @if ($sold['art_status'] == 3)
-                                                    <td><span class="badge badge-primary">Sold</span></td>
+                                                    <td><span class="badge badge-primary">已售</span></td>
                                                 @endif
                                                 {{-- <td>{{ $sold['created_at'] }}</td> --}}
                                                 

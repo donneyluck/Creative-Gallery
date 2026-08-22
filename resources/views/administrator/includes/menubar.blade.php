@@ -1,8 +1,8 @@
 <aside class="main-sidebar sidebar-light-primary elevation-4">
     <a href="{{ url('/admin/dashboard') }}" class="brand-link">
-        <img src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+        <img src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
             class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Creative<b>Gallery</b></span>
+        <span class="brand-text font-weight-light">创意<b>画廊</b></span>
     </a>
     <div class="sidebar">
         <br>
@@ -10,23 +10,23 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
 
-                <!-- Dashboard -->
+                <!-- 仪表盘 -->
                 <li class="nav-item">
                     <a href="{{ url('/admin/dashboard') }}" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Dashboard
+                            仪表盘
                         </p>
                     </a>
                 </li>
-                <!-- Dashboard -->
+                <!-- 仪表盘 -->
 
-                <!-- Accounts -->
+                <!-- 账户管理 -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
                         <p>
-                            Users
+                            用户s
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -35,7 +35,7 @@
                             <a href="{{ url('/admin/accounts') }}" class="nav-link">
                                 <i class="nav-icon fas fa-list"></i>
                                 <p>
-                                    Accounts
+                                    账户管理
                                 </p>
                             </a>
                         </li>
@@ -50,14 +50,14 @@
 
                     </ul>
                 </li>
-                <!-- Accounts -->
+                <!-- 账户管理 -->
 
-                <!-- Biddings -->
+                <!-- 竞拍管理 -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-palette"></i>
                         <p>
-                            Biddings
+                            竞拍管理
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -82,7 +82,7 @@
                             <a href="{{ url('/admin/bidding/sold') }}" class="nav-link">
                                 <i class="nav-icon fas fa-receipt"></i>
                                 <p>
-                                    Sold
+                                    已售
                                 </p>
                             </a>
                         </li>
@@ -90,7 +90,7 @@
                             <a href="{{ url('/admin/verification') }}" class="nav-link">
                                 <i class="nav-icon fas fa-id-card"></i>
                                 <p>
-                                    Paid
+                                    已支付
                                 </p>
                             </a>
                         </li> --}}
@@ -98,29 +98,29 @@
 
                     </ul>
                 </li>
-                <!-- Biddings -->
+                <!-- 竞拍管理 -->
 
-                <!-- Categories -->
+                <!-- 分类管理 -->
                 <li class="nav-item">
                     <a href="{{ url('/admin/categories') }}" class="nav-link">
                         <i class="nav-icon fas fa-list-check"></i>
                         <p>
-                            Categories
+                            分类管理
                         </p>
                     </a>
                 </li>
-                <!-- Categories -->
+                <!-- 分类管理 -->
 
-                <!-- Payments -->
+                <!-- 支付管理 -->
                 <li class="nav-item">
                     <a href="{{ url('/admin/payments') }}" class="nav-link">
                         <i class="nav-icon fas fa-money-bill"></i>
                         <p>
-                            Payments
+                            支付管理
                         </p>
                     </a>
                 </li>
-                <!-- Payments -->
+                <!-- 支付管理 -->
             </ul>
         </nav>
     </div>

@@ -1,25 +1,25 @@
-<!-- Approve -->
+<!-- 通过 -->
 <div class="modal fade" id="approve">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Verification | Approve</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Verification | 通过</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formApprove" class="form-horizontal" method="GET" action="">
+                <form id="form通过" class="form-horizontal" method="GET" action="">
                     @csrf
                     {{-- <input type="text" id="delete_id" name="id"> --}}
                     <div class="text-center">
-                        <h2 class="bold"> Are you sure you want to approve this User?</h2>
+                        <h2 class="bold"> Are you sure you want to approve this 用户?</h2>
                     </div>
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-success"> Approve</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-success"> 通过</button>
                 </form>
             </div>
             <!-- /.modal-content -->
@@ -27,16 +27,16 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Approve -->
+<!-- 通过 -->
 
 
-<!-- Upload -->
+<!-- 上传 -->
 <div class="modal fade" id="upload">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Professors | Upload</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Professors | 上传</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -54,7 +54,7 @@
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                 <button type="submit" class="btn btn-primary">Save</button>
                 </form>
             </div>
@@ -63,7 +63,7 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Upload -->
+<!-- 上传 -->
 
 
 <!-- Add Face -->
@@ -72,7 +72,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title">Employee | Add Face</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -94,8 +94,8 @@
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn bg-navy"> Upload</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn bg-navy"> 上传</button>
                 </form>
             </div>
             <!-- /.modal-content -->

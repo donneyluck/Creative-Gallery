@@ -13,9 +13,9 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         <!-- Preloader -->
         @include('user/includes/menubar')
@@ -28,7 +28,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -40,7 +40,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -67,7 +67,7 @@
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="newMessageModalLabel">New Message</h5>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                    aria-label="Close"></button>
+                                                    aria-label="关闭"></button>
                                             </div>
                                             <div class="modal-body">
             
@@ -161,11 +161,11 @@
                             <div class="options">
                                 <div class="cart">
                                     <div>
-                                        <div id="chatUserAvatar" class="img">
+                                        <div id="chat用户Avatar" class="img">
                                             <img src="./images/blacklogo.png" alt="">
                                         </div>
-                                        <div id="chatUserName" class="info">
-                                            <p class="name">Creative Gallery</p>
+                                        <div id="chat用户姓名" class="info">
+                                            <p class="name">创意画廊</p>
                                         </div>
                                     </div>
                                 </div>
@@ -249,10 +249,10 @@
             var userId = document.getElementById('uid').value;
             var message = document.getElementById('emoji').value;
 
-            // Create the query string
+            // 创建 the query string
             var params = "user_id=" + encodeURIComponent(userId) + "&message=" + encodeURIComponent(message);
 
-            // Create a new XMLHttpRequest object
+            // 创建 a new XMLHttpRequest object
             var xhr = new XMLHttpRequest();
 
             // Configure it: POST-request for the URL
@@ -306,26 +306,26 @@
     </script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var carts = document.querySelectorAll('.cart');
+            var carts = document.querySelector全部('.cart');
 
             carts.forEach(function(cart) {
                 cart.addEventListener('click', function() {
                     var userId = this.dataset.userId;
                     $('#newMessageModal').modal('hide');
                     $('#uid').val(userId);
-                    loadUserInfo(userId);
-                    loadChatsWithUser(userId);
+                    load用户Info(userId);
+                    loadChatsWith用户(userId);
                 });
             });
 
             function createMessageElement(chat) {
                 var messageContainer = document.createElement('div');
-                messageContainer.className = 'row';
+                messageContainer.class姓名 = 'row';
                 if (chat.type == 2) {
 
                     var photoMessage = document.createElement('img');
                     var photoDiv = document.createElement('div');
-                    photoDiv.className = 'row';
+                    photoDiv.class姓名 = 'row';
 
                     var buttonPay = document.createElement('button');
 
@@ -334,7 +334,7 @@
                     // Set button class for styling
                     buttonPay.classList.add('button-pay');
 
-                    // Create an image element for the GCash icon
+                    // 创建 an image element for the GCash icon
                     var gcashIcon = document.createElement('img');
                     gcashIcon.src = '/storage/images/gcash.png' ; // Replace with the actual path to your GCash icon
                     gcashIcon.alt = 'GCash Icon';
@@ -346,7 +346,7 @@
 
                     var messageParagraph = document.createElement('p');
                     var messageDiv = document.createElement('div');
-                    messageDiv.className = 'row';
+                    messageDiv.class姓名 = 'row';
 
                     photoMessage.style.width = "240px";
                     photoMessage.style.height = "320px";
@@ -426,7 +426,7 @@
                 xhr.send(params);
             }
 
-            function loadChatsWithUser(userId) {
+            function loadChatsWith用户(userId) {
                 var xhr = new XMLHttpRequest();
                 var url = "{{ route('chat.fetchMessages') }}";
                 var params = "user_id=" + userId;
@@ -451,9 +451,9 @@
             }
 
 
-            function loadUserInfo(userId) {
+            function load用户Info(userId) {
                 var xhr = new XMLHttpRequest();
-                var url = "{{ route('chat.loadUser') }}";
+                var url = "{{ route('chat.load用户') }}";
                 var params = "user_id=" + userId;
 
                 xhr.open('POST', url, true);
@@ -501,11 +501,11 @@
             }
 
             function updateUI(user) {
-                var chatUserAvatar = document.getElementById('chatUserAvatar');
-                var chatUserName = document.getElementById('chatUserName');
+                var chat用户Avatar = document.getElementById('chat用户Avatar');
+                var chat用户姓名 = document.getElementById('chat用户姓名');
 
-                chatUserAvatar.innerHTML = '<img src="../storage/' + user.avatar + '" alt="">';
-                chatUserName.innerHTML = '<p class="name">' + user.name + '</p>';
+                chat用户Avatar.innerHTML = '<img src="../storage/' + user.avatar + '" alt="">';
+                chat用户姓名.innerHTML = '<p class="name">' + user.name + '</p>';
             }
         });
     </script>

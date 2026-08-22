@@ -14,8 +14,8 @@
             <form class="form-inline ml-0 ml-md-3" id="searchForm" method="GET">
                 @csrf
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" id="searchInput" type="search" placeholder="Search"
-                        aria-label="Search">
+                    <input class="form-control form-control-navbar" id="searchInput" type="search" placeholder="搜索"
+                        aria-label="搜索">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
                             <i class="fas fa-search"></i>
@@ -41,7 +41,7 @@
                 </li>
             @endif --}}
             <li class="nav-item">
-                <a href="/logout" id="logout" class="nav-link">Logout</a>
+                <a href="/logout" id="logout" class="nav-link">退出</a>
             </li>
         </ul>
     </div>
@@ -128,11 +128,11 @@
         dropdownMenu.appendChild(finalDivider);
 
         // Footer link (optional)
-        // var seeAllLink = document.createElement('a');
-        // seeAllLink.classList.add('dropdown-item', 'dropdown-footer');
-        // seeAllLink.href = '#';
-        // seeAllLink.textContent = 'See All Notifications';
-        // dropdownMenu.appendChild(seeAllLink);
+        // var see全部Link = document.createElement('a');
+        // see全部Link.classList.add('dropdown-item', 'dropdown-footer');
+        // see全部Link.href = '#';
+        // see全部Link.textContent = 'See 全部 Notifications';
+        // dropdownMenu.appendChild(see全部Link);
     }
     sendRequest();
     setInterval(sendRequest, 60000);

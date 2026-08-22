@@ -1,19 +1,19 @@
 <aside class="main-sidebar sidebar-light-primary elevation-4">
     <a href="{{ url('/home') }}" class="brand-link">
-        <img src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+        <img src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
             class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">Creative<b>Gallery</b></span>
+        <span class="brand-text font-weight-light">创意<b>画廊</b></span>
     </a>
     <div class="sidebar">
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
-                <!-- Home -->
+                <!-- 首页 -->
                 <li class="nav-item">
                     <a href="{{ url('/home') }}" class="nav-link">
                         <i class="nav-icon fas fa-home"></i>
                         <p>
-                            Home
+                            首页
                         </p>
                     </a>
                 </li>
@@ -26,12 +26,12 @@
                         </p>
                     </a>
                 </li> --}}
-                <!-- Categories -->
+                <!-- 分类管理 -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-list-check"></i>
                         <p>
-                            Categories
+                            分类管理
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
@@ -53,21 +53,21 @@
                         <a href="{{ url('/offers') }}" class="nav-link">
                             <i class="nav-icon fas fa-handshake"></i>
                             <p>
-                                My Offers
+                                我的出价
                             </p>
                         </a>
                     </li>
                 @endif
 
-                <!-- My Artworks -->
+                <!-- 我的作品 -->
 
-                <!-- My Artworks -->
+                <!-- 我的作品 -->
                 @if (Auth::user()->subscription_status == 1 && Auth::user()->role == 2)
-                    <li id="menuArtworks" class="nav-item">
+                    <li id="menu作品s" class="nav-item">
                         <a href="" class="nav-link">
                             <i class="nav-icon fas fa-palette"></i>
                             <p>
-                                My Artworks
+                                我的作品
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -75,13 +75,13 @@
                             <li class="nav-item">
                                 <label class="nav-link" id="available-filter">
                                     <input type="radio" name="art-status" value="1">
-                                    Available
+                                    在售
                                 </label>
                             </li>
                             <li class="nav-item">
                                 <label class="nav-link" id="sold-filter">
                                     <input type="radio" name="art-status" value="3">
-                                    Sold
+                                    已售
                                 </label>
                             </li>
                         </ul>
@@ -94,7 +94,7 @@
                         <a href="{{ url('/artworks') }}" class="nav-link">
                             <i class="nav-icon fas fa-palette"></i>
                             <p>
-                                My Artworks
+                                我的作品
                             </p>
                         </a>
                     </li>
@@ -103,7 +103,7 @@
                         <a href="#" class="nav-link">
                             <i class="nav-icon fas fa-palette"></i>
                             <p>
-                                My Artworks
+                                我的作品
                                 <i class="fas fa-angle-left right"></i>
                             </p>
                         </a>
@@ -111,14 +111,14 @@
                             <li class="nav-item">
                                 <label class="nav-link">
                                     <input type="checkbox" name="available" value="1">
-                                    Available
+                                    在售
                                 </label>
                             </li>
 
                             <li class="nav-item">
                                 <label class="nav-link">
                                     <input type="checkbox" name="sold" value="3">
-                                    Sold
+                                    已售
                                 </label>
                             </li>
                         </ul>
@@ -126,20 +126,20 @@
     
                 @endif --}}
 
-                <!-- Create -->
+                <!-- 创建 -->
                 <li class="nav-item">
                     @if (Auth::user()->subscription_status == 0 && Auth::user()->role == 2)
                         <a href="#view_as_artist_sub" id="artist_sub" data-toggle="modal" class="nav-link">
                             <i class="nav-icon fas fa-solid fa-plus"></i>
                             <p>
-                                Create
+                                创建
                             </p>
                         </a>
                     @elseif (Auth::user()->subscription_status == 1 && Auth::user()->role == 2)
                         <a href="#add" data-toggle="modal" class="nav-link">
                             <i class="nav-icon fas fa-solid fa-plus"></i>
                             <p>
-                                Create
+                                创建
                             </p>
                         </a>
                     @endif
@@ -155,7 +155,7 @@
         <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="{{ asset('../storage/images/avatars/' . session('photo')) }}" class="img-circle elevation-2"
-                    height="22" width="22" alt="User Image">
+                    height="22" width="22" alt="用户 Image">
             </div>
             <div class="info">
                 <a href="#profile" data-toggle="modal" id="my_profile" class="d-block">{{ session('name') }}</a>
@@ -168,7 +168,7 @@
             <a href="https://creative-gallery.online/storage/docs/Creative-Gallery-Auction-Terms-and-Rules.docx"
                 class="nav-link">
                 <p>
-                    Terms & Rules
+                    条款与规则
                 </p>
             </a>
         </li>

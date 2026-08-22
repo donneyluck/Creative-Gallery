@@ -1,15 +1,15 @@
-<!-- Approve -->
+<!-- 通过 -->
 <div class="modal fade" id="approve">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Request | Approve</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Request | 通过</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formApprove" class="form-horizontal" method="GET" action="">
+                <form id="form通过" class="form-horizontal" method="GET" action="">
                     @csrf
 
                     <video width="100%" id="videoPlayer" controls>
@@ -21,38 +21,38 @@
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-success"> Confirm</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-success"> 确认</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<!-- Approve -->
+<!-- 通过 -->
 
-<!-- Reject -->
+<!-- 拒绝 -->
 <div class="modal fade" id="reject">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Request | Reject</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Request | 拒绝</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formReject" class="form-horizontal" method="GET" action="">
+                <form id="form拒绝" class="form-horizontal" method="GET" action="">
                     @csrf
                     <div class="text-center">
                         <h2 class="bold"> Are you sure you want to reject this request?</h2>
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-danger"> Confirm</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-danger"> 确认</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<!-- Reject -->
+<!-- 拒绝 -->

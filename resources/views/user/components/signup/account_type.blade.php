@@ -6,8 +6,8 @@
             </div>
             <div class="card-body">
                 <img src="{{ asset('../storage/images/lover.png') }}" alt="Art Lover Image">
-                <button onclick="handleCreateAccount()" class="btn btn-success btn-flat">
-                    Create Account
+                <button onclick="handle创建Account()" class="btn btn-success btn-flat">
+                    创建 Account
                 </button>
             </div>
         </div>
@@ -18,9 +18,9 @@
                 <h6>Are you an artist?</h6>
             </div>
             <div class="card-body">
-                <img src="{{ asset('../storage/images/artist.png') }}" alt="Artist Image">
-                <button onclick="handleCreateAccount2()" class="btn btn-success btn-flat">
-                    Create Account
+                <img src="{{ asset('../storage/images/artist.png') }}" alt="艺术家 Image">
+                <button onclick="handle创建Account2()" class="btn btn-success btn-flat">
+                    创建 Account
                 </button>
             </div>
         </div>

@@ -23,8 +23,8 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Create</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">创建</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -38,32 +38,32 @@
                                     name="upload_photo" class="fixed-size-upload" />
                                 <input type="file" placeholder="" class="file-chooser"
                                     onchange="document.getElementById('upload_photo').src = window.URL.createObjectURL(this.files[0])"
-                                    id="photo" name="photo" alt="Upload photo" required>
+                                    id="photo" name="photo" alt="上传 photo" required>
                             </div>
                         </div>
                         <div class="col-sm-5">
                             <div class="form-group">
-                                <label for="title" class="col-sm-12 control-label">Title of the Artwork</label>
+                                <label for="title" class="col-sm-12 control-label">作品名称</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="title" name="title"
-                                        placeholder="Enter artwork's name here..."
+                                        placeholder="请输入作品名称..."
                                         oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="description" class="col-sm-12 control-label">Description</label>
+                                <label for="description" class="col-sm-12 control-label">描述</label>
                                 <div class="col-xs-12">
                                     <textarea rows="5" class="form-control" id="description" name="description"
-                                        placeholder="Enter artwork's full description here..."
+                                        placeholder="请输入作品描述..."
                                         oninput="this.value = this.value.replace(/[^A-Z a-z ]/g, '');" required></textarea>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="category" class="col-sm-12 control-label">Category</label>
+                                <label for="category" class="col-sm-12 control-label">分类</label>
                                 <div class="col-xs-12">
                                     <select class="form-control select2" id="category" name="category"
                                         style="width: 100%;">
-                                        <option selected="selected">Select Category</option>
+                                        <option selected="selected">Select 分类</option>
                                         @foreach ($categories as $category)
                                             <option value="{{ $category['id'] }}">{{ $category['name'] }}</option>
                                         @endforeach
@@ -71,12 +71,12 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="start_date" class="col-sm-12 control-label">Bidding Date</label>
+                                <label for="start_date" class="col-sm-12 control-label">竞拍日期</label>
                                 <div class="col-xs-12">
                                     <div class="input-group date" id="start_date" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
                                             name="start_date" data-target="#start_date"
-                                            placeholder="Enter bidding's date here..."
+                                            placeholder="请输入竞拍日期..."
                                             oninput="this.value = this.value.replace(/[^0-9 / : P A M ]/g, '');" />
                                         <div class="input-group-append" data-target="#start_date"
                                             data-toggle="datetimepicker">
@@ -86,11 +86,11 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="end_date" class="col-sm-12 control-label">End Date</label>
+                                <label for="end_date" class="col-sm-12 control-label">结束日期</label>
                                 <div class="col-xs-12">
                                     <div class="input-group date" id="end_date" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input"
-                                            placeholder="Enter bidding's end date here..." data-target="#end_date"
+                                            placeholder="请输入竞拍结束日期..." data-target="#end_date"
                                             name="end_date"
                                             oninput="this.value = this.value.replace(/[^0-9 / : P A M ]/g, '');" />
                                         <div class="input-group-append" data-target="#end_date"
@@ -102,15 +102,15 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="start_price" class="col-sm-12 control-label">Starting Price</label>
+                                <label for="start_price" class="col-sm-12 control-label">起拍价</label>
                                 <div class="col-xs-12">
                                     <input type="text" class="form-control" id="start_price" name="start_price"
-                                        placeholder="Enter artwork's price here..."
+                                        placeholder="请输入作品价格..."
                                         oninput="this.value = this.value.replace(/[^0-9 ]/g, '');" required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label for="video" class="col-sm-12 control-label">Proof of Authenticity</label>
+                                <label for="video" class="col-sm-12 control-label">真伪证明</label>
                                 <div class="col-xs-12">
                                     <input type="file" id="video" name="video" accept="video/*" required>
                                 </div>
@@ -119,8 +119,8 @@
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-success">Upload</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <button type="submit" class="btn btn-success">上传</button>
                 </form>
             </div>
         </div>
@@ -128,13 +128,13 @@
 </div>
 <!-- Add -->
 
-<!-- View as Artist -->
+<!-- 查看 as 艺术家 -->
 <div class="modal fade" id="view_as_artist">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">View</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">查看</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -150,7 +150,7 @@
                                     <img oncontextmenu="return false;"
                                         src="{{ asset('../storage/images/blacklogo.png') }}" alt="ID"
                                         id="view_photo" class="product-image" />
-                                    <div class="watermark">Creative <br> Gallery</div>
+                                    <div class="watermark">创意<br>画廊</div>
                                 </div>
                                 {{-- <img oncontextmenu="return false;" src="{{ asset('../storage/images/blacklogo.png') }}" id="view_photo"
                                     class="product-image" alt="Product Image"> --}}
@@ -160,10 +160,10 @@
                             <h3 class="my-3" id="view_title"></h3>
                             <div class="row">
                                 <div class="col">
-                                    <p id="view_category">Category</p>
+                                    <p id="view_category">分类</p>
                                 </div>
                                 <div class="col">
-                                    <p id="view_start_date">Start Date</p>
+                                    <p id="view_start_date">Start 日期</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -171,7 +171,7 @@
                                     <h5 id="view_duration">Duration</h5>
                                 </div>
                                 {{-- <div class="col">
-                                    <h5 id="view_end_date">End Date</h5>
+                                    <h5 id="view_end_date">结束日期</h5>
                                 </div> --}}
                             </div>
                             <p id="view_description"></p>
@@ -188,7 +188,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3 class="card-title">All Offers - Highest to Lowest</h3>
+                                    <h3 class="card-title">所有出价（从高到低）</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                             <i class="fas fa-minus"></i>
@@ -202,7 +202,7 @@
                                 </div>
 
                                 {{-- <div class="card-footer text-center">
-                                    <a href="javascript:void(0)" class="uppercase">View All Offers</a>
+                                    <a href="javascript:void(0)" class="uppercase">查看 全部 Offers</a>
                                 </div> --}}
                             </div>
                         </div>
@@ -212,15 +212,15 @@
         </div>
     </div>
 </div>
-<!-- View -->
+<!-- 查看 -->
 
-<!-- View as Enthusiast -->
+<!-- 查看 as 收藏家 -->
 <div class="modal fade" id="view_as_buyer">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">View</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">查看</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -228,7 +228,7 @@
                 <form class="form-horizontal" method="POST" action="/home/offer">
                     @csrf
                     <input type="hidden" id="enthusiast_art_id" name="art_id" />
-                    <p>Note. Same offer is not allowed.</p>
+                    <p>提示：不能重复出价</p>
                     <div class="row">
                         <div class="col-12 col-sm-6">
                             <h3 class="d-inline-block d-sm-none" id="enthusiast_title"></h3>
@@ -237,15 +237,15 @@
                                     <img oncontextmenu="return false;"
                                         src="{{ asset('../storage/images/blacklogo.png') }}" alt="ID"
                                         id="enthusiast_photo" class="product-image" />
-                                    <div class="watermark">Creative <br> Gallery</div>
+                                    <div class="watermark">创意<br>画廊</div>
                                 </div>
                             </div>
                             <hr>
                             <div class="col-12">
                                 <div class="form-group">
-                                    <p>Enter your offer here in Philippine currency.</p>
+                                    <p>请输入您的出价</p>
                                     <input type="text" class="form-control form-control-lg" id="offer"
-                                        name="offer" placeholder="Ex: 1000">
+                                        name="offer" placeholder="示例：1000">
                                 </div>
                             </div>
                         </div>
@@ -253,10 +253,10 @@
                             <h3 class="my-3" id="enthusiast_title"></h3>
                             <div class="row">
                                 <div class="col">
-                                    <h5 id="enthusiast_category">Category</h5>
+                                    <h5 id="enthusiast_category">分类</h5>
                                 </div>
                                 <div class="col">
-                                    <h5 id="enthusiast_start_date">Start Date</h5>
+                                    <h5 id="enthusiast_start_date">Start 日期</h5>
                                 </div>
                             </div>
                             <div class="row">
@@ -264,7 +264,7 @@
                                     <h5 id="enthusiast_duration">Duration</h5>
                                 </div>
                                 {{-- <div class="col">
-                                    <h5 id="enthusiast_end_date">End Date</h5>
+                                    <h5 id="enthusiast_end_date">结束日期</h5>
                                 </div> --}}
                             </div>
                             <p id="enthusiast_description"></p>
@@ -278,22 +278,22 @@
             </div>
 
             <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Send Offer</button>
+                <button type="submit" class="btn btn-primary">出价</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
-<!-- View -->
+<!-- 查看 -->
 
 <!-- Accept -->
 <div class="modal fade" id="accept">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Offer | Accept</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">接受出价</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
@@ -301,12 +301,12 @@
                 <form id="formAccept" class="form-horizontal" method="GET" action="">
                     @csrf
                     <div class="text-center">
-                        <h2 class="bold"> Are you sure you want to accept this Offer?</h2>
+                        <h2 class="bold"> 您确定要接受这个出价吗？</h2>
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-success"> Confirm</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-success"> 确认</button>
                 </form>
             </div>
         </div>
@@ -314,39 +314,39 @@
 </div>
 <!-- Accept -->
 
-<!-- Reject -->
+<!-- 拒绝 -->
 <div class="modal fade" id="reject">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Offer | Reject</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">拒绝出价</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formReject" class="form-horizontal" method="POST" action="/reject-offer">
+                <form id="form拒绝" class="form-horizontal" method="POST" action="/reject-offer">
                     @csrf
                     <input type="hidden" id="rejectId" name="id" />
                     <div class="text-center">
-                        <h2 class="bold"> Are you sure you want to reject this Offer?</h2>
+                        <h2 class="bold"> 您确定要拒绝这个出价吗？</h2>
                     </div>
                     <div class="row mb-2">
                         <div class="col-lg-12 col-md-12 col-sm-12">
                             <div class="form-group">
-                                <textarea class="form-control" placeholder="Enter reason..." 
-                                rows="3" id="rejectReason" name="reason"></textarea>
+                                <textarea class="form-control" placeholder="请输入原因..." 
+                                rows="3" id="reject原因" name="reason"></textarea>
                             </div>
 
                         </div>
                     </div>
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-danger"> Confirm</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-danger"> 确认</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
-<!-- Reject -->
+<!-- 拒绝 -->

@@ -7,4 +7,4 @@
 <p>Thank you!</p>
 
 <h3><b><i>[Burgos College]</i></b></h3>
-<h3><b>Creative Gallery Team</b></h3>
+<h3><b>创意画廊 Team</b></h3>

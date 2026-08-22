@@ -79,26 +79,26 @@
 
                     var bankInfos = @json(session('bank_infos'));
                     var logoSrc = "/storage/images/banks/" + bankInfos[0].logo;
-                    var bankName = bankInfos[0].name;
-                    var bankAddress = bankInfos[0].address;
-                    var bankEmail = bankInfos[0].email;
-                    var bankContact = bankInfos[0]
+                    var bank姓名 = bankInfos[0].name;
+                    var bank地址 = bankInfos[0].address;
+                    var bank邮箱 = bankInfos[0].email;
+                    var bank联系方式 = bankInfos[0]
                         .contact; // Add this line to get contact information
 
                     // Add the image with appropriate styling
                     var img = $('<img src="' + logoSrc +
                         '" style="height:90px;width:90px;margin-right:10px;vertical-align:middle;" />'
                     );
-                    header.prepend(img).append(bankName);
+                    header.prepend(img).append(bank姓名);
 
-                    // Create a div for email and contact
+                    // 创建 a div for email and contact
                     var infoDiv = $('<div style="text-align:center;"></div>');
 
-                    infoDiv.append('<p style="font-size: 18px;">Email: ' + bankEmail +
+                    infoDiv.append('<p style="font-size: 18px;">邮箱: ' + bank邮箱 +
                         '</p>'); // Adjust font size here
-                    infoDiv.append('<p style="font-size: 18px;">Contact: ' + bankContact +
+                    infoDiv.append('<p style="font-size: 18px;">联系方式: ' + bank联系方式 +
                         '</p>'); // Adjust font size here
-                    infoDiv.append('<p style="font-size: 18px;">Address: ' + bankAddress +
+                    infoDiv.append('<p style="font-size: 18px;">地址: ' + bank地址 +
                         '</p>'); // Adjust font size here
 
                     // Append the infoDiv to the header
@@ -182,7 +182,7 @@
 </script>
 <script>
     $(function() {
-        //Date picker
+        //日期 picker
         $('#datepicker_add').datepicker({
             autoclose: true,
             format: 'yyyy-mm-dd'
@@ -197,23 +197,23 @@
         // showInputs: false
         // })
 
-        // //Date range picker
+        // //日期 range picker
         // $('#reservation').daterangepicker()
-        // //Date range picker with time picker
+        // //日期 range picker with time picker
         // $('#reservationtime').daterangepicker({ timePicker: true, timePickerIncrement: 30, format: 'MM/DD/YYYY h:mm A' })
-        //Date range as a button
+        //日期 range as a button
         $('#daterange-btn').daterangepicker({
                 ranges: {
                     'Today': [moment(), moment()],
                     'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
                     'Last 7 Days': [moment().subtract(6, 'days'), moment()],
                     'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-                    'This Month': [moment().startOf('month'), moment().endOf('month')],
-                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1,
+                    'This 月': [moment().startOf('month'), moment().endOf('month')],
+                    'Last 月': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1,
                         'month').endOf('month')]
                 },
-                startDate: moment().subtract(29, 'days'),
-                endDate: moment()
+                start日期: moment().subtract(29, 'days'),
+                end日期: moment()
             },
             function(start, end) {
                 $('#daterange-btn span').html(start.format('MMMM D, YYYY') + ' - ' + end.format(

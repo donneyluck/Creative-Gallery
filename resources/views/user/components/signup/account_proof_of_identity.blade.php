@@ -6,7 +6,7 @@
                 onchange="document.getElementById('id_photo').src = window.URL.createObjectURL(this.files[0])"
                 name="valid_id_photo" alt="ID photo" required>
         </div>
-        <label>* Upload any government valid ID.</label>
+        <label>* 上传 any government valid ID.</label>
 
     </div>
 
@@ -17,7 +17,7 @@
                 onchange="document.getElementById('selfie_photo').src = window.URL.createObjectURL(this.files[0])"
                 name="selfie_photo" alt="Selfie photo" required>
         </div>
-        <label>* Upload a picture while holding your ID.</label>
+        <label>* 上传 a picture while holding your ID.</label>
     </div>
 </div>
 <div class="row mb-2">

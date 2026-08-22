@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>Creative Gallery</title>
+    <title>创意画廊</title>
     <link rel="icon" href="{{ url('storage/images/whitelogo.png') }}">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="{{ url('storage/dist/css/adminlte.min.css') }}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{ url('storage/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
-    <!-- Daterange picker -->
+    <!-- 日期range picker -->
     <link rel="stylesheet" href="{{ url('storage/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ url('storage/plugins/summernote/summernote-bs4.min.css') }}">

@@ -12,9 +12,9 @@
 <body class="hold-transition layout-top-nav control-sidebar-push-slide">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         @include('user/includes/navbar')
         <div class="content-wrapper">
@@ -22,7 +22,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -62,7 +62,7 @@
                                                 <button type="button" class="step-trigger" role="tab"
                                                     aria-controls="information-part" id="information-part-trigger">
                                                     <span class="bs-stepper-circle">3</span>
-                                                    <span class="bs-stepper-label">Proof of Identity</span>
+                                                    <span class="bs-stepper-label">身份证明</span>
                                                 </button>
                                             </div>
                                         </div>
@@ -130,7 +130,7 @@
         });
     </script>
     <script>
-        function handleCreateAccount() {
+        function handle创建Account() {
 
             var placePhotoDiv = document.getElementById('place-photo-div');
             placePhotoDiv.style.display = 'none';
@@ -140,7 +140,7 @@
             window.stepper.next(); // Assuming stepper is defined globally as in your original code
         }
 
-        function handleCreateAccount2() {
+        function handle创建Account2() {
 
             $('#acc_type').val(2);
             // Proceed to the next step in your stepper (if needed)
@@ -302,12 +302,12 @@
             );
             $.validator.addMethod("validAge", function(value, element) {
                 console.log(value);
-                var today = new Date();
-                var birthDate = new Date(value);
-                var age = today.getFullYear() - birthDate.getFullYear();
-                var monthDifference = today.getMonth() - birthDate.getMonth();
-                if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate
-                        .getDate())) {
+                var today = new 日期();
+                var birth日期 = new 日期(value);
+                var age = today.getFullYear() - birth日期.getFullYear();
+                var monthDifference = today.get月() - birth日期.get月();
+                if (monthDifference < 0 || (monthDifference === 0 && today.get日期() < birth日期
+                        .get日期())) {
                     age--;
                 }
                 return age >= 18;

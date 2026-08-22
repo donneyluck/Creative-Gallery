@@ -6,9 +6,9 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         <!-- Preloader -->
 
@@ -22,12 +22,12 @@
                 <div class="container-fluid">
                     <div class="row mb-2">
                         <div class="col-sm-6">
-                            <h1>Payments</h1>
+                            <h1>支付管理</h1>
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
-                                <li class="breadcrumb-item active">Payments</li>
+                                <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
+                                <li class="breadcrumb-item active">支付管理</li>
                             </ol>
                         </div>
                     </div>
@@ -39,7 +39,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -51,7 +51,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -75,12 +75,12 @@
                                             <th>#</th>
                                             <th>Reference No.</th>
                                             {{-- <th>URL</th> --}}
-                                            <th>Artwork</th>
-                                            <th>Artist</th>
-                                            <th>Amount</th>
+                                            <th>作品</th>
+                                            <th>艺术家</th>
+                                            <th>金额</th>
                                             <th>Buyer</th>
-                                            <th>Payment Status</th>
-                                            <th>Created At</th>
+                                            <th>Payment 状态</th>
+                                            <th>创建d At</th>
                                           
                                         </tr>
                                     </thead>
@@ -96,9 +96,9 @@
                                                 <td>{{ $payment['bidding_offer'] }}</td>
                                                 <td>{{ $payment['enthusiast_name'] }}</td>
                                                 @if ($payment['status'] == 1)
-                                                    <td><span class="badge badge-success">Paid</span></td>
+                                                    <td><span class="badge badge-success">已支付</span></td>
                                                 @elseif ($payment['status'] == 0)
-                                                    <td><span class="badge badge-danger">Unpaid</span></td>
+                                                    <td><span class="badge badge-danger">未支付</span></td>
                                                 @endif
                                                 <td>{{ $payment['created_at'] }}</td>
                                                
@@ -162,8 +162,8 @@
 
                 //$('#delete_id').val(id);
 
-                var formAction = '/administrator/category/delete/' + id;
-                $('#formDelete').attr('action', formAction);
+                var form操作 = '/administrator/category/delete/' + id;
+                $('#form删除').attr('action', form操作);
             });
 
 

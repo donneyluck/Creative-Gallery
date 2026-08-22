@@ -5,7 +5,7 @@
     }
 </style>
 
-<!-- Subscribe as Artist -->
+<!-- Subscribe as 艺术家 -->
 <div class="modal fade" id="view_as_artist_sub">
     <div class="modal-dialog modal-md">
         <div class="modal-content" style="background:#020035;">
@@ -17,7 +17,7 @@
                             <h3 class="my-3" style="color:white;" id="view_title">PREMIUM</h3>
                             <div class="row">
                                 <div class="col">
-                                    <h5 id="view_category" style="color:white;">For Artist</h5>
+                                    <h5 id="view_category" style="color:white;">For 艺术家</h5>
                                 </div>
                             </div>
                             <div class="row">
@@ -30,13 +30,13 @@
                                     <div
                                         class="p-2 d-flex align-items-center text-white justify-content-center align-icon">
                                         <i class="fas fa-check"></i>
-                                        <p class="mb-0 ml-2">Exhibit Artworks</p>
+                                        <p class="mb-0 ml-2">Exhibit 作品s</p>
                                     </div>
                                   
                                     <div
                                         class="p-2 d-flex align-items-center text-white justify-content-center align-icon">
                                         <i class="fas fa-check"></i>
-                                        <p class="mb-0 ml-2">Auction yout Artwork</p>
+                                        <p class="mb-0 ml-2">Auction yout 作品</p>
                                     </div>
                                     <div class="p-2 d-flex align-items-center justify-content-center align-icon">
                                         <a href="/create-payment-link"
@@ -54,9 +54,9 @@
         </div>
     </div>
 </div>
-<!-- Subscribe as Artist -->
+<!-- Subscribe as 艺术家 -->
 
-<!-- Subscribe as Enthusiast -->
+<!-- Subscribe as 收藏家 -->
 <div class="modal fade" id="view_as_buyer_sub">
     <div class="modal-dialog modal-md">
         <div class="modal-content" style="background:#020035;">
@@ -68,7 +68,7 @@
                             <h3 class="my-3" style="color:white;" id="view_title">PREMIUM</h3>
                             <div class="row">
                                 <div class="col">
-                                    <h5 id="view_category" style="color:white;">For Art Enthusiast</h5>
+                                    <h5 id="view_category" style="color:white;">For Art 收藏家</h5>
                                 </div>
                             </div>
                             <div class="row">
@@ -81,7 +81,7 @@
                                     <div
                                         class="p-2 d-flex align-items-center text-white justify-content-center align-icon">
                                         <i class="fas fa-check"></i>
-                                        <p class="mb-0 ml-2">Offer for Artworks</p>
+                                        <p class="mb-0 ml-2">Offer for 作品s</p>
                                     </div>
                                    
                                     <div class="p-2 d-flex align-items-center justify-content-center align-icon">
@@ -100,4 +100,4 @@
         </div>
     </div>
 </div>
-<!-- Subscribe as Enthusiast -->
+<!-- Subscribe as 收藏家 -->

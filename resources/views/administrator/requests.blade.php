@@ -4,9 +4,9 @@
 <body class="hold-transition sidebar-mini layout-fixed">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="Creative Gallery"
+            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="创意画廊"
                 height="180" width="180">
-            <h1>Creative Gallery</h1>
+            <h1>创意画廊</h1>
         </div>
         @include('administrator/includes/navbar')
         @include('administrator/includes/menubar')
@@ -19,7 +19,7 @@
                         </div>
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="{{ url('home') }}">Home</a></li>
+                                <li class="breadcrumb-item"><a href="{{ url('home') }}">首页</a></li>
                                 <li class="breadcrumb-item">Bidding</li>
                                 <li class="breadcrumb-item active">Requests</li>
                             </ol>
@@ -31,7 +31,7 @@
                 @if ($errors->any())
                     <div class='alert alert-danger alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-warning'></i> Error!</h4>
+                        <h4><i class='icon fa fa-warning'></i> 错误！</h4>
                         <ul>
                             @foreach ($errors->all() as $error)
                                 <li>{{ $error }}</li>
@@ -42,7 +42,7 @@
                 @if (session()->has('success'))
                     <div class='alert alert-success alert-dismissible'>
                         <button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;</button>
-                        <h4><i class='icon fa fa-check'></i> Success!</h4>
+                        <h4><i class='icon fa fa-check'></i> 成功！</h4>
                         <ul>
                             {{ session()->get('success') }}
                         </ul>
@@ -60,14 +60,14 @@
                                     <thead>
                                         <tr>
                                             <th>#</th>
-                                            <th>Artwork</th>
-                                            <th>Artist</th>
-                                            <th>Description</th>
-                                            <th>Starting Price</th>
-                                            <th>Date</th>
+                                            <th>作品</th>
+                                            <th>艺术家</th>
+                                            <th>描述</th>
+                                            <th>起拍价</th>
+                                            <th>日期</th>
                                             <th>Duration</th>
-                                            <th>Status</th>
-                                            <th>Date Requested</th>
+                                            <th>状态</th>
+                                            <th>日期 Requested</th>
                                             <th>Tools</th>
                                         </tr>
                                     </thead>
@@ -96,10 +96,10 @@
                                                         data-id="{{ $request['id'] }}"
                                                         data-proof="{{ $request['proof_of_ownership'] }}"><i
                                                             class="fas fa-check"></i>
-                                                        Approve</button>
+                                                        通过</button>
                                                     <button type="button" class="btn btn-danger btn-sm reject"
                                                         data-id="{{ $request['id'] }}"><i class="fas fa-close"></i>
-                                                        Reject</button>
+                                                        拒绝</button>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -125,8 +125,8 @@
                 $('#approve').modal('show');
                 var id = $(this).data('id');
                 var proof = $(this).data('proof');
-                var formAction = '/admin/bidding/request/approve/' + id;
-                $('#formApprove').attr('action', formAction);
+                var form操作 = '/admin/bidding/request/approve/' + id;
+                $('#form通过').attr('action', form操作);
                 $('#videoSource').attr('src', '/' + proof); 
                 let vid = document.getElementById("videoPlayer");
                 vid.load();
@@ -135,8 +135,8 @@
             $('#example1 tbody').on("click", ".reject", function() {
                 $('#reject').modal('show');
                 var id = $(this).data('id');
-                var formAction = '/admin/bidding/request/reject/' + id;
-                $('#formReject').attr('action', formAction);
+                var form操作 = '/admin/bidding/request/reject/' + id;
+                $('#form拒绝').attr('action', form操作);
             });
         });
     </script>

@@ -1,16 +1,16 @@
 
-<!-- Deactivate -->
+<!-- 禁用 -->
 <div class="modal fade" id="deactivate">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Account | Deactivate</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Account | 禁用</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formDeactivate" class="form-horizontal" method="GET" action="">
+                <form id="form禁用" class="form-horizontal" method="GET" action="">
                     @csrf
                     {{-- <input type="text" id="delete_id" name="id"> --}}
                     <div class="text-center">
@@ -19,8 +19,8 @@
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-danger"> Deactivate</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-danger"> 禁用</button>
                 </form>
             </div>
             <!-- /.modal-content -->
@@ -28,22 +28,22 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Deactivate -->
+<!-- 禁用 -->
 
 
 
-<!-- Activate -->
+<!-- 激活 -->
 <div class="modal fade" id="activate">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title">Account | Activate</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <h4 class="modal-title">Account | 激活</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="关闭">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <form id="formActivate" class="form-horizontal" method="GET" action="">
+                <form id="form激活" class="form-horizontal" method="GET" action="">
                     @csrf
                     {{-- <input type="text" id="delete_id" name="id"> --}}
                     <div class="text-center">
@@ -52,8 +52,8 @@
 
             </div>
             <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal"> Close</button>
-                <button type="submit" class="btn btn-success"> Activate</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                <button type="submit" class="btn btn-success"> 激活</button>
                 </form>
             </div>
             <!-- /.modal-content -->
@@ -61,7 +61,7 @@
         <!-- /.modal-dialog -->
     </div>
 </div>
-<!-- Activate -->
+<!-- 激活 -->
 
 
 
