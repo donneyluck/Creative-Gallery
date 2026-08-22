@@ -53,7 +53,7 @@ class OfferController extends Controller
             ->join('art', 'art.id', '=', 'biddings.art_id')
             ->join('categories', 'categories.id', '=', 'art.category_id')
             ->leftJoin(DB::raw('(
-            SELECT art_id, MAX(offer) AS highest_offer 
+            SELECT art_id, MAX(amount) AS highest_offer 
             FROM biddings
             GROUP BY art_id
         ) AS highest_bids'), 'art.id', '=', 'highest_bids.art_id')
@@ -123,7 +123,7 @@ class OfferController extends Controller
             )
             ->leftJoin('categories', 'categories.id', '=', 'art.category_id')
             ->leftJoin(DB::raw('(
-            SELECT art_id, MAX(offer) AS highest_offer
+            SELECT art_id, MAX(amount) AS highest_offer
             FROM biddings 
             GROUP BY art_id
         ) AS highest_bids'), 'art.id', '=', 'highest_bids.art_id')
@@ -195,7 +195,7 @@ class OfferController extends Controller
             )
             ->leftJoin('categories', 'categories.id', '=', 'art.category_id')
             ->leftJoin(DB::raw('(
-            SELECT art_id, MAX(offer) AS highest_offer, created_at AS bid_at 
+            SELECT art_id, MAX(amount) AS highest_offer, created_at AS bid_at 
             FROM biddings 
             GROUP BY art_id, created_at
         ) AS highest_bids'), 'art.id', '=', 'highest_bids.art_id')
@@ -267,7 +267,7 @@ class OfferController extends Controller
             )
             ->leftJoin('categories', 'categories.id', '=', 'art.category_id')
             ->leftJoin(DB::raw('(
-            SELECT art_id, MAX(offer) AS highest_offer
+            SELECT art_id, MAX(amount) AS highest_offer
             FROM biddings 
             GROUP BY art_id
         ) AS highest_bids'), 'art.id', '=', 'highest_bids.art_id')
@@ -340,7 +340,7 @@ class OfferController extends Controller
     //         ->join('art', 'art.id', '=', 'biddings.art_id')
     //         ->join('categories', 'categories.id', '=', 'art.category_id')
     //         ->leftJoin(DB::raw('(
-    //             SELECT art_id, MAX(offer) AS highest_offer
+    //             SELECT art_id, MAX(amount) AS highest_offer
     //             FROM biddings 
     //             GROUP BY art_id
     //         ) AS highest_bids'), 'art.id', '=', 'highest_bids.art_id')
