@@ -9,7 +9,7 @@
 <body class="hold-transition layout-top-nav control-sidebar-push-slide">
     <div class="wrapper">
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="吴派写意"
+            <img class="animation__shake" src="{{ url('/storage/images/blacklogo.png') }}" alt="吴派写意"
                 height="180" width="180">
             <h1>吴派写意</h1>
         </div>
@@ -43,7 +43,7 @@
                         @foreach ($arts as $index => $art)
                             <div class="col-lg-3">
                                 <div class="card">
-                                    <img src="{{ url('../storage/images/arts/' . $art['photo']) }}" alt="ID"
+                                    <img src="{{ url('/storage/images/arts/' . $art['photo']) }}" alt="ID"
                                         class="img-fluid fixed-size-img mb-2" />
                                     <div class="card-body">
                                         <div class="d-flex">

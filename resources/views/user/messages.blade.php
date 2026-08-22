@@ -13,7 +13,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="吴派写意"
+            <img class="animation__shake" src="{{ url('/storage/images/blacklogo.png') }}" alt="吴派写意"
                 height="180" width="180">
             <h1>吴派写意</h1>
         </div>
@@ -504,7 +504,7 @@
                 var chat用户Avatar = document.getElementById('chat用户Avatar');
                 var chat用户姓名 = document.getElementById('chat用户姓名');
 
-                chat用户Avatar.innerHTML = '<img src="../storage/' + user.avatar + '" alt="">';
+                chat用户Avatar.innerHTML = '<img src="/storage/' + user.avatar + '" alt="">';
                 chat用户姓名.innerHTML = '<p class="name">' + user.name + '</p>';
             }
         });

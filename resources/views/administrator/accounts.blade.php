@@ -6,7 +6,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="吴派写意"
+            <img class="animation__shake" src="{{ url('/storage/images/blacklogo.png') }}" alt="吴派写意"
                 height="180" width="180">
             <h1>吴派写意</h1>
         </div>
@@ -92,7 +92,7 @@
                                             <tr>
                                                 <td>{{ $index + 1 }}</td>
                                                 <td>{{ $account['username'] }}</td>
-                                                {{-- <td><img src="{{ url('storage/images/employees/' . $employee['photo']) }}"
+                                                {{-- <td><img src="{{ url('/storage/images/employees/' . $employee['photo']) }}"
                                                     alt="Employee" class="brand-image img-circle elevation-3"
                                                     style="width:60px;height:60px;"></td> --}}
                                                 <td>{{ $account['name'] }}</td>

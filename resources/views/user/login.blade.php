@@ -1,132 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>吴派写意</title>
-    <!--===============================================================================================-->
-    <link rel="icon" href="{{ url('storage/images/whitelogo.png') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/vendor/bootstrap/css/bootstrap.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/fonts/font-awesome-4.7.0/css/font-awesome.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/vendor/animate/animate.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/vendor/css-hamburgers/hamburgers.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/vendor/select2/select2.min.css') }}">
-    <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/css/util.css') }}">
-    <link rel="stylesheet" type="text/css" href="{{ url('storage/css/main.css') }}">
-    <!--===============================================================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>吴派写意 - 登录</title>
+    <link rel="icon" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/img/AdminLTELogo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/icheck-bootstrap@3.0.1/icheck-bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .login-box {
+            width: 360px;
+        }
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .login-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .login-logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .login-logo h1 {
+            color: #fff;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .btn-primary {
+            background-color: #667eea;
+            border-color: #667eea;
+        }
+        .btn-primary:hover {
+            background-color: #5a6fd6;
+            border-color: #5a6fd6;
+        }
+    </style>
 </head>
-
-<style>
-    .container-login100 {
-        background-image: url('{{ url('storage/images/loginbg.png') }}');
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-    }
-
-    .wrap-login100 {
-        background-color: rgba(255, 255, 255, 0.7);
-        /* Adjust the last value (alpha) to set transparency */
-    }
-</style>
-
 <body>
-
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100">
-                <div class="login100-pic js-tilt" data-tilt>
-                    <img src="{{ url('storage/images/blacklogo.png') }}" alt="IMG">
-                </div>
-
-                <form class="login100-form validate-form" action="/login" method="POST">
+    <div class="login-box">
+        <div class="login-logo">
+            <img src="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/img/AdminLTELogo.png" alt="吴派写意">
+            <h1>吴派写意</h1>
+        </div>
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">请登录</p>
+                @if ($errors->any())
+                    <div class="alert alert-danger alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <h4><i class="icon fa fa-warning"></i> 错误！</h4>
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+                <form action="/login" method="POST">
                     @csrf
-                    <span class="login100-form-title">
-                        吴派写意
-                    </span>
-
-                    <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="email" name="email" placeholder="邮箱 地址">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input" data-validate = "Password is required">
-                        <input class="input100" type="password" name="password" placeholder="Password">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-                            <i class="fa fa-lock" aria-hidden="true"></i>
-                        </span>
-                    </div>
-
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-                            Login
-                        </button>
-                    </div>
-
-                    <div class="text-center p-t-12">
-                        @if ($errors->any())
-                            <div class='alert alert-danger alert-dismissible'>
-                                <button type='button' class='close' data-dismiss='alert'
-                                    aria-hidden='true'>&times;</button>
-                                <h4><i class='icon fa fa-warning'></i> 错误！</h4>
-                                <ul>
-                                    @foreach ($errors->all() as $error)
-                                        <li>{{ $error }}</li>
-                                    @endforeach
-                                </ul>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" name="email" placeholder="邮箱" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-envelope"></span>
                             </div>
-                        @endif
-
-                        @if (session()->has('success'))
-                            <div class='alert alert-success alert-dismissible'>
-                                <button type='button' class='close' data-dismiss='alert'
-                                    aria-hidden='true'>&times;</button>
-                                <h4><i class='icon fa fa-check'></i> 成功！</h4>
-                                <ul>
-                                    {{ session()->get('success') }}
-                                </ul>
-                            </div>
-                        @endif
+                        </div>
                     </div>
-
-                    <div class="text-center p-t-136">
-                        {{-- <a class="txt2" href="#">
-                            创建 your Account
-                            <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-                        </a> --}}
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control" name="password" placeholder="密码" required>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary btn-block">登录</button>
+                        </div>
                     </div>
                 </form>
+                <p class="mb-0 text-center mt-3">
+                    还没有账号？<a href="/signup">注册</a>
+                </p>
             </div>
         </div>
     </div>
-
-    <!--===============================================================================================-->
-    <script src="{{ url('storage/vendor/jquery/jquery-3.2.1.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ url('storage/vendor/bootstrap/js/popper.js') }}"></script>
-    <script src="{{ url('storage/vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ url('storage/vendor/select2/select2.min.js') }}"></script>
-    <!--===============================================================================================-->
-    <script src="{{ url('storage/vendor/tilt/tilt.jquery.min.js') }}"></script>
-    <script>
-        $('.js-tilt').tilt({
-            scale: 1.1
-        })
-    </script>
-    <!--===============================================================================================-->
-    <script src="{{ url('storage/js/main.js') }}"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2.0/dist/js/adminlte.min.js"></script>
 </body>
-
 </html>

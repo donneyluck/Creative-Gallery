@@ -6,7 +6,7 @@
 
         <!-- Preloader -->
         <div class="preloader flex-column justify-content-center align-items-center">
-            <img class="animation__shake" src="{{ url('storage/images/blacklogo.png') }}" alt="吴派写意"
+            <img class="animation__shake" src="{{ url('/storage/images/blacklogo.png') }}" alt="吴派写意"
                 height="180" width="180">
             <h1>吴派写意</h1>
         </div>

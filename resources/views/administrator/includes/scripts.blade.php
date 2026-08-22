@@ -1,56 +1,56 @@
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 
-<script src="{{ url('storage/plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/jquery/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="{{ url('storage/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
 <script>
     $.widget.bridge('uibutton', $.ui.button)
 </script>
 <!-- Bootstrap 4 -->
-<script src="{{ url('storage/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
 <!-- ChartJS -->
-<script src="{{ url('storage/plugins/chart.js/Chart.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/chart.js/Chart.min.js') }}"></script>
 <!-- Sparkline -->
-<script src="{{ url('storage/plugins/sparklines/sparkline.js') }}"></script>
+<script src="{{ url('/storage/plugins/sparklines/sparkline.js') }}"></script>
 <!-- JQVMap -->
-<script src="{{ url('storage/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
-<script src="{{ url('storage/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script>
+<script src="{{ url('/storage/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script>
 <!-- jQuery Knob Chart -->
-<script src="{{ url('storage/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
 <!-- daterangepicker -->
-<script src="{{ url('storage/plugins/moment/moment.min.js') }}"></script>
-<script src="{{ url('storage/plugins/daterangepicker/daterangepicker.js') }}"></script>
+<script src="{{ url('/storage/plugins/moment/moment.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/daterangepicker/daterangepicker.js') }}"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="{{ url('storage/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 <!-- Summernote -->
-<script src="{{ url('storage/plugins/summernote/summernote-bs4.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/summernote/summernote-bs4.min.js') }}"></script>
 <!-- overlayScrollbars -->
-<script src="{{ url('storage/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="{{ url('storage/dist/js/adminlte.js') }}"></script>
+<script src="{{ url('/storage/dist/js/adminlte.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="{{ url('storage/dist/js/adminlte.min.js') }}"></script>
+<script src="{{ url('/storage/dist/js/adminlte.min.js') }}"></script>
 <!-- Kit -->
 <script src="https://kit.fontawesome.com/59dd6eb8f0.js" crossorigin="anonymous"></script>
 <!-- DataTables  & Plugins -->
-<script src="{{ url('storage/plugins/datatables/jquery.dataTables.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
-<script src="{{ url('storage/plugins/jszip/jszip.min.js') }}"></script>
-<script src="{{ url('storage/plugins/pdfmake/pdfmake.min.js') }}"></script>
-<script src="{{ url('storage/plugins/pdfmake/vfs_fonts.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
-<script src="{{ url('storage/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/jszip/jszip.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/pdfmake/pdfmake.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/pdfmake/vfs_fonts.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 <!-- SweetAlert2 -->
-<script src="{{ url('storage/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
 <!-- Toastr -->
-<script src="{{ url('storage/plugins/toastr/toastr.min.js') }}"></script>
-<script src="{{ url('storage/plugins/bs-stepper/js/bs-stepper.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/toastr/toastr.min.js') }}"></script>
+<script src="{{ url('/storage/plugins/bs-stepper/js/bs-stepper.min.js') }}"></script>
 
 
 
@@ -124,7 +124,7 @@
         // table.on('customize', function(doc) {
         //     // Add your logo to the header
         //     doc.content.splice(0, 0, {
-        //         text: {{ url('storage/images/blood-reserve.jpg') }}, // Replace with the URL or HTML for your logo
+        //         text: {{ url('/storage/images/blood-reserve.jpg') }}, // Replace with the URL or HTML for your logo
         //         margin: [0, 0, 0, 12], // Adjust margins as needed
         //         alignment: 'center'
         //     });
